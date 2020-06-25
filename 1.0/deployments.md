@@ -1,4 +1,4 @@
-# Deployment
+# Deployments
 
 ## Getting started
 
