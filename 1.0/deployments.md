@@ -1,7 +1,5 @@
 # Deployments
 
-## Getting started
-
 Before you can start deploying your code, the following must be done:
 
 * Create a server from your project's dashboard

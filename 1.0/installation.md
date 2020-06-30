@@ -5,6 +5,12 @@
 - Laravel 5.8
 - openssh-clients (installed on the servcer to establish ssh connections)
 
+## Important notes
+
+Given that the deployment process uses symlinks. The user performing the deployment actions will be required to have the ability to reload the php-fpm service on the server. You may create a deployment hook which does this after the "Clean Up" action.
+
+See [folder structure](folder-structure.md) for more information.
+
 ## Installing Deploy
 
 Prior to installing this package, it is assumed you have already configured an auth gaurd with the App\User model for your Laravel application. 
@@ -82,56 +88,6 @@ Worker roles also handle:
 
 * Testing server connections
 
-## Middleware
-
-The provided config `deploy.php` also provides a convenient way to add middlewares. You may add your own or one of Laravels out-of-the-box middlwares, such as `auth` to the middleware list.
-
 ## Deploy dashboard
 
 Once you have completed the bare minimum of installation, a dashboard to manage your projects will be exposed at `/deploy`.
-
-## Broadcasting
-
-To allow real-time feedback when a deployment or server connection has started or finished, you may set up the application 
-to utlise Laravel's broadcasting feature.
-
-Deploy currently only supports Pusher.
-
-```
-composer require pusher/pusher-php-server "~4.0"
-```
-
-Note: You may need to restart the queue worker to pick up on your configuration updates.
-
-### Configuration
-
-You will need to change your broadcast driver to `pusher` in your `.env` file:
-
-```
-BROADCAST_DRIVER=pusher
-```
-
-Finally, you may update the Pusher credentials. The frontend assets for Deploy will automatically include your Pusher key and cluster.
-
-## Updating Deploy
-
-To update you may run `composer update`.
-
-```
-composer update
-```
-
-### Updating assets and migrations
-
-```
-php artisan vendor:publish --tag=deploy-assets --force
-```
-Also, make sure to run your migrations after pulling in any updates for this package.
-
-```
-php artisan migrate
-```
-
-## Deployments
-
-Given that the deployment process uses symlinks. The user performing the deployment actions will be required to have the ability to reload the php-fpm service on the server. You may create a deployment hook which does this after the "Clean Up" action.
