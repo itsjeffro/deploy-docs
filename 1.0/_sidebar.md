@@ -4,6 +4,8 @@
 
     - [Installation](installation.md)
 
+    - [Repository providers](repository-providers.md)
+
     - [Broadcasting](broadcasting.md)
 
     - [Authorization](authorization.md)
@@ -23,3 +25,9 @@
     - [Environments](environments.md)
 
     - [Linked folders](linked-folders.md)
+
+    - [Notifications](notifications.md)
+
+- Contributing
+
+    - [Development](contributions.md)
