@@ -14,7 +14,7 @@ BITBUCKET_OAUTH_KEY=client_id
 BITBUCKET_OAUTH_SECRET=client_secret
 ```
 
-Please follow the [official Bitbucket docs](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html) on how to create a OAuth app.
+Please follow the [official Bitbucket docs](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html) on how to create an OAuth consumer.
 
 Callback URL: `https://yoursite.com/deploy/authorize/bitbucket/access`
 
