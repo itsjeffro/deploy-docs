@@ -8,10 +8,12 @@ Deploy provides a dashboard for existing Laravel applications for zero-downtime 
 
 ## Features
 
-- Server downtime deployments
+- Zero-downtime deployments
+
+- Auto-deployments using webhooks
+
+- Rollbacks
 
 - Environment management
 
-- Hooks to further control deployments
-
-- Auto-deployments using webhooks
+- Hooks to further control deployments and more
