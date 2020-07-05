@@ -5,6 +5,11 @@ To update you may run `composer update`.
 ```bash
 composer update
 ```
+Also, to ensure that the queue workers have the recent file changes you may run `php artisan queue:restart`.
+
+```bash
+php artisan queue:restart
+```
 
 ## Updating assets and migrations
 
