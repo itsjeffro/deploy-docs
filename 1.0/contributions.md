@@ -43,3 +43,25 @@ Prior to pushing changes to the repository, you must run `npm run prod` so that 
 ## Working on the API
 
 TBA
+
+## Tests
+
+To ensure no features are broken, the following can be run using `phpunit`. Since integration tests are inlcuded, a database will be required.
+
+```bash
+cp phpunit.xml.dist phpunit.xml
+```
+
+Next, update the env values to reflect the database you will be running migrations and tests against. The database used is `deploy_test` during the setup.
+
+### Running without coverage
+
+```bash
+./vendor/bin/phpunit
+```
+
+### Running with coverage
+
+```bash
+./vendor/bin/phpunit --coverage-html coverage
+```
