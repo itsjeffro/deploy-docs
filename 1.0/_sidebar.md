@@ -1,33 +1,31 @@
-- [Home](/)
-
 - Getting started
 
-    - [Installation](installation.md)
+    - [Installation](/docs/{{version}}/installation)
 
-    - [Repository providers](repository-providers.md)
+    - [Repository providers](/docs/{{version}}/repository-providers)
 
-    - [Broadcasting](broadcasting.md)
+    - [Broadcasting](/docs/{{version}}/broadcasting)
 
-    - [Authorization](authorization.md)
+    - [Authorization](/docs/{{version}}/authorization)
 
-    - [Updating deploy](updating-deploy.md)
+    - [Updating deploy](/docs/{{version}}/updating-deploy)
 
 - Guide
 
-    - [Folder structure](folder-structure.md)
+    - [Folder structure](/docs/{{version}}/folder-structure)
 
-    - [Projects](projects.md)
+    - [Projects](/docs/{{version}}/projects)
 
-    - [Deployments](deployments.md)
+    - [Deployments](/docs/{{version}}/deployments)
 
-    - [Deployment hooks](deployment-hooks.md)
+    - [Deployment hooks](/docs/{{version}}/deployment-hooks)
 
-    - [Environments](environments.md)
+    - [Environments](/docs/{{version}}/environments)
 
-    - [Linked folders](linked-folders.md)
+    - [Linked folders](/docs/{{version}}/linked-folders)
 
-    - [Notifications](notifications.md)
+    - [Notifications](/docs/{{version}}/notifications)
 
 - Contributing
 
-    - [Development](contributions.md)
+    - [Development](/docs/{{version}}/contributions)
