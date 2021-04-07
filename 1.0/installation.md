@@ -9,7 +9,7 @@
 
 ### PHP projects
 
-?> Due to the use of symbolic links (symlinks), the SSH user performing server actions should be able to run `service php-fpm reload`. You may create a deployment hook which does this after the "Clean Up" action.
+Due to the use of symbolic links (symlinks), the SSH user performing server actions should be able to run `service php-fpm reload`. You may create a deployment hook which does this after the "Clean Up" action.
 
 ## Installing Deploy
 
@@ -38,9 +38,7 @@ php artisan migrate
 
 ### Configuration
 
-After publishing the assets, the primary config file will be located at `config/deploy.php`. 
-
-Before using the deploy application, you will need to set up your repository provider and a proper queue driver.
+After publishing the assets, the primary config file will be located at `config/deploy.php`. Before using the deploy application, you will need to set up your repository provider and a proper queue driver.
 
 #### Repository providers
 
