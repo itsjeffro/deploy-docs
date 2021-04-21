@@ -2,8 +2,8 @@
 
 ## Requirements
 
-- Laravel 5.8
-- openssh-clients (installed on the servcer to establish ssh connections)
+- Laravel 7.0+
+- openssh-clients (installed on the server to establish ssh connections)
 
 ## Important notes
 
@@ -13,7 +13,7 @@ Due to the use of symbolic links (symlinks), the SSH user performing server acti
 
 ## Installing Deploy
 
-Prior to installing this package, it is assumed you have already configured an auth gaurd with the App\User model for your Laravel application. 
+Prior to installing this package, it is assumed you have already configured an auth guard with the App\User model for your Laravel application. 
 
 Using composer, install the package into your Laravel project:
 
